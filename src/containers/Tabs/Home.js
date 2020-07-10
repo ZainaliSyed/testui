@@ -1,34 +1,34 @@
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React, {Component} from 'react';
+import {View, Text, StyleSheet, Image} from 'react-native';
+import {Metrics, Colors, Images, AppStyles} from '../../theme';
 
 export default class Home extends Component {
+  state = {};
 
-  state = {
-
-  }
-
-  componentDidMount() {
-
-  }
+  componentDidMount() {}
 
   render() {
-
-    const { } = this.props
+    const {} = this.props;
 
     return (
       <View style={styles.container}>
-        <Text>Home</Text>
+        <Text style={{...AppStyles.gbRe(20, Colors.primary.black)}}>
+          Home test 1
+        </Text>
+        <Text style={{...AppStyles.gbBold(20, Colors.primary.black)}}>
+          Home test 2
+        </Text>
+
+        <Image source={Images.image1} />
       </View>
-    )
-
+    );
   }
-
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 });

@@ -6,10 +6,10 @@
 //  Copyright © 2019 Retrocube. All rights reserved.
 //
 export default {
-
   // =============================================================================
   // NAVIGATION
   // =============================================================================
   icBack: require('../assets/images/navigation/icBack.png'),
-  icMenu: require('../assets/images/navigation/icMenu.png')
+  icMenu: require('../assets/images/navigation/icMenu.png'),
+  image1: require('../assets/images/images/image1.png'),
 };

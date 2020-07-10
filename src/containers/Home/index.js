@@ -1,13 +1,19 @@
 // @flow
 import React, {Fragment, Component} from 'react';
 import {connect} from 'react-redux';
-import {SafeAreaView, Text, TouchableOpacity, StyleSheet} from 'react-native';
+import {
+  SafeAreaView,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+} from 'react-native';
 import {push} from '../../services/NavigationService';
 import {Metrics} from '../../theme';
 import {request, logout, multipleRequest} from '../../actions/ServiceAction';
 import {LOGIN, SIGNUP} from '../../actions/ActionTypes';
 import constant from '../../constants';
-
+import {Metrics, Colors, AppStyles, Images, Strings} from '../../theme';
 class Home extends Component {
   state = {
     isLoaded: false,
@@ -82,7 +88,9 @@ class Home extends Component {
     return (
       <Fragment>
         <SafeAreaView>
-          <Text>{'Home'}</Text>
+          <Text>{'Homsse'}</Text>
+          <Image source={Images.icBack} />
+
           <TouchableOpacity
             onPress={this._onStatusChange}
             style={{

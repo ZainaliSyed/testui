@@ -8,7 +8,7 @@
 import {StyleSheet} from 'react-native';
 import {Metrics, Fonts, Colors} from '.';
 
-const gbRe = (size: Number = 16, color = Colors.text.white) => {
+const hlRe = (size: Number = 16, color = Colors.text.white) => {
   return {
     fontFamily: Fonts.Type.Regular,
     fontSize: Metrics.generatedFontSize(size),
@@ -16,7 +16,7 @@ const gbRe = (size: Number = 16, color = Colors.text.white) => {
   };
 };
 // Fonts
-const gbBold = (size: Number = 16, color = Colors.text.white) => {
+const hlBold = (size: Number = 16, color = Colors.text.white) => {
   return {
     fontFamily: Fonts.Type.Bold,
     fontSize: Metrics.generatedFontSize(size),
@@ -49,6 +49,6 @@ export default StyleSheet.create({
     width: 28,
     height: 28,
   },
-  gbRe,
-  gbBold,
+  hlRe,
+  hlBold,
 });

@@ -12,10 +12,10 @@ export default class Home extends Component {
 
     return (
       <View style={styles.container}>
-        <Text style={{...AppStyles.gbRe(20, Colors.primary.black)}}>
+        <Text style={{...AppStyles.hlRe(20, Colors.primary.black)}}>
           Home test 1
         </Text>
-        <Text style={{...AppStyles.gbBold(20, Colors.primary.black)}}>
+        <Text style={{...AppStyles.hlBold(20, Colors.primary.black)}}>
           Home test 2
         </Text>
 

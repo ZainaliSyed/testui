@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     // height: Metrics.horizontalLineHeight,
     // marginHorizontal: Metrics.baseMargin,
     // borderStyle: 'solid',
-    borderWidth: 1,
-    borderColor: '#fff',
+    borderWidth: 0.3,
+    borderColor: '#5C746A',
   },
 });

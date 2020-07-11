@@ -66,7 +66,10 @@ const SessionsStack = ({navigation}) => (
 );
 
 export default TabNav = () => (
-  <Tab.Navigator>
+  <Tab.Navigator
+    tabBarOptions={{
+      style: {backgroundColor: '#202332'},
+    }}>
     <Tab.Screen
       name="HomeStack"
       component={HomeStack}

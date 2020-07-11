@@ -6,4 +6,7 @@
 //  Copyright © 2019 Retrocube. All rights reserved.
 //
 //  Add custom component here
-export {};
+
+import Separator from './Separator';
+
+export {Separator};

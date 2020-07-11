@@ -6,6 +6,7 @@ import {
   Image,
   ImageBackground,
   FlatList,
+  SafeAreaView,
 } from 'react-native';
 import {Metrics, Colors, Images, AppStyles} from '../../theme';
 import {FlatListHandler, ButtonView} from '../../reuseableComponents';
@@ -62,6 +63,7 @@ export default class Home extends Component {
 
     return (
       <View style={styles.container}>
+        <SafeAreaView style={{backgroundColor: Colors.primary}} />
         <Header.HomeHeader
           leftIcon={Images.icSearch}
           rightIcon={Images.icPlus}

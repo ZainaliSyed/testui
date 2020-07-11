@@ -6,6 +6,7 @@ import {
   Image,
   ImageBackground,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import {Metrics, Colors, Images, AppStyles} from '../../theme';
 import {withSafeAreaInsets} from 'react-native-safe-area-context';
@@ -74,7 +75,10 @@ export default class Sessions extends Component {
                 width: 30,
                 height: 30,
               }}>
-              <Image tintColor="#1cb281" source={Images.selectionTick} />
+              <Image
+                source={Images.selectionTick}
+                style={{tintColor: '#1cb281'}}
+              />
             </View>
           </View>
         </View>
@@ -93,34 +97,35 @@ export default class Sessions extends Component {
     const {} = this.props;
 
     return (
-      <ScrollView style={styles.container}>
+      <View style={styles.container}>
+        <SafeAreaView style={{backgroundColor: 'black'}} />
         <ImageBackground source={Images.large_image} style={styles.Sessionbg}>
           <View style={styles.childView}>
             <Text style={styles.instName}>Catherine Williams</Text>
             <Text style={styles.workOut}>Back and Abs</Text>
             <Text style={styles.advns}>Advansed</Text>
           </View>
-          <View style={styles.childView2}>
-            {this.dateScheduleTime()}
-
-            <View style={styles.childViewChild2}>
-              <View>
-                <Text style={styles.excrses}>Exercises</Text>
-              </View>
-            </View>
-            <FlatListHandler
-              data={['a', 'b', 'c', 'd', 'e']}
-              // style={{marginTop: Metrics.heightRatio(25)}}
-              // fetchRequest={this.fetchScheduleList}
-              renderItem={this.renderItem}
-              // ItemSeparatorComponent={this.renderSeparator}
-              // emptyImage={Images.emptyNotification}
-              // isFetching={this.props.inAppNotificationsIsFetching}
-              showsHorizontalScrollIndicator={false}
-            />
-          </View>
         </ImageBackground>
-      </ScrollView>
+        <View style={styles.childView2}>
+          {this.dateScheduleTime()}
+
+          <View style={styles.childViewChild2}>
+            <View>
+              <Text style={styles.excrses}>Exercises</Text>
+            </View>
+          </View>
+          <FlatListHandler
+            data={['a', 'b', 'c', 'd', 'e']}
+            // style={{marginTop: Metrics.heightRatio(25)}}
+            // fetchRequest={this.fetchScheduleList}
+            renderItem={this.renderItem}
+            // ItemSeparatorComponent={this.renderSeparator}
+            // emptyImage={Images.emptyNotification}
+            // isFetching={this.props.inAppNotificationsIsFetching}
+            showsHorizontalScrollIndicator={false}
+          />
+        </View>
+      </View>
     );
   }
 }

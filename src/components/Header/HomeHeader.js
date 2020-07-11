@@ -10,10 +10,18 @@ export default HomeHeader = (props) => {
   return (
     <View style={styles.container}>
       <ButtonView style={{paddingHorizontal: 15}}>
-        <Image tintColor={Colors.primary.white} source={props.leftIcon} />
+        <Image
+          source={props.leftIcon}
+          style={{
+            width: 20,
+            height: 20,
+            padding: 10,
+            tintColor: Colors.primary.white,
+          }}
+        />
       </ButtonView>
       <ButtonView style={{paddingHorizontal: 15}}>
-        <Image source={props.rightIcon} />
+        <Image source={props.rightIcon} style={{width: 20, height: 20}} />
       </ButtonView>
     </View>
   );

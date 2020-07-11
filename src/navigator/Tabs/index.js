@@ -4,6 +4,7 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from '../../containers/Tabs/Home';
 import Details from '../../containers/Tabs/Details';
+import Sessions from '../../containers/Tabs/sessions';
 import {Images} from '../../theme';
 
 const Tab = createBottomTabNavigator();
@@ -41,6 +42,22 @@ const DetailsStack = ({navigation}) => (
   </Stack.Navigator>
 );
 
+const SessionsStack = ({navigation}) => (
+  <Stack.Navigator>
+    <Stack.Screen
+      name="Sessions"
+      component={Sessions}
+      // options={{
+      //   headerLeft: () => (
+      //     <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
+      //       <Image source={Images.icMenu} style={{marginHorizontal: 15}} />
+      //     </TouchableOpacity>
+      //   ),
+      // }}
+    />
+  </Stack.Navigator>
+);
+
 export default TabNav = () => (
   <Tab.Navigator>
     <Tab.Screen
@@ -55,6 +72,13 @@ export default TabNav = () => (
       component={DetailsStack}
       options={{
         tabBarLabel: 'Details',
+      }}
+    />
+    <Tab.Screen
+      name="SessionsStack"
+      component={SessionsStack}
+      options={{
+        tabBarLabel: 'Sessions',
       }}
     />
   </Tab.Navigator>

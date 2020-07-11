@@ -9,11 +9,11 @@ import {pop} from '../../services/NavigationService';
 export default HomeHeader = (props) => {
   return (
     <View style={styles.container}>
-      <ButtonView onPress={() => pop()} style={{paddingHorizontal: 15}}>
-        <Image source={Images.icMenu} />
+      <ButtonView style={{paddingHorizontal: 15}}>
+        <Image tintColor={Colors.primary.white} source={props.leftIcon} />
       </ButtonView>
-      <ButtonView onPress={() => pop()} style={{paddingHorizontal: 15}}>
-        <Image source={Images.icBack} />
+      <ButtonView style={{paddingHorizontal: 15}}>
+        <Image source={props.rightIcon} />
       </ButtonView>
     </View>
   );
@@ -21,6 +21,7 @@ export default HomeHeader = (props) => {
 
 const styles = StyleSheet.create({
   container: {
+    marginVertical: Metrics.doubleBaseMargin,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: Metrics.baseMargin,

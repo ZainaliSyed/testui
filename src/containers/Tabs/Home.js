@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import {Metrics, Colors, Images, AppStyles} from '../../theme';
 import {FlatListHandler, ButtonView} from '../../reuseableComponents';
-import {Box} from '../../components';
+import {Box, Header} from '../../components';
 export default class Home extends Component {
   state = {
     data: [
@@ -62,6 +62,11 @@ export default class Home extends Component {
 
     return (
       <View style={styles.container}>
+        <Header.HomeHeader
+          leftIcon={Images.icSearch}
+          rightIcon={Images.icPlus}
+        />
+
         <FlatListHandler
           horizontal
           data={data}

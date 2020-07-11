@@ -14,6 +14,9 @@ export default {
   image1: require('../assets/images/images/image1.png'),
   large_image: require('../assets/images/images/large_image.png'),
   selectionTick: require('../assets/images/images/selectionTick.png'),
+  icSearch: require('../assets/images/icSearch/icSearch.png'),
+  icPlus: require('../assets/images/icPlus/icPlus.png'),
+
   // image3: require('../assets/images/large_image/image3.png'),
   // image4: require('../assets/images/medium_image/image4.png'),
   // image5: require('../assets/images/medium_image/image5.png'),

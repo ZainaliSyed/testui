@@ -11,7 +11,10 @@ const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
 
 const HomeStack = ({navigation}) => (
-  <Stack.Navigator>
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}>
     <Stack.Screen
       name="Home"
       component={Home}
@@ -43,10 +46,14 @@ const DetailsStack = ({navigation}) => (
 );
 
 const SessionsStack = ({navigation}) => (
-  <Stack.Navigator>
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}>
     <Stack.Screen
       name="Sessions"
       component={Sessions}
+
       // options={{
       //   headerLeft: () => (
       //     <TouchableOpacity onPress={() => navigation.toggleDrawer()}>

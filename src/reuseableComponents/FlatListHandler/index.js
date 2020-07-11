@@ -44,7 +44,6 @@ class FlatListHandler extends Component {
     if (this.props.isFetching && !this.props.data.length) {
       return this.props.loader ? this.props.loader : <Loader />;
     }
-    console.log('render FlatList :', this.props);
     /* Rendering contains all the basic stuff list needs to render it self what ever extra props is passed to is overridden */
     return (
       <FlatList

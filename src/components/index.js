@@ -16,5 +16,6 @@
 //  Add custom component here
 
 import Box from './Box';
+import Separator from './Separator';
 
-export {Box};
+export {Separator, Box};

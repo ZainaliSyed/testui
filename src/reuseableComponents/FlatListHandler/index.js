@@ -55,7 +55,6 @@ class FlatListHandler extends Component {
         onEndReached={this.onEndReached}
         keyExtractor={this.keyExtractor}
         onEndReachedThreshold={0.5}
-       
         ListEmptyComponent={this.renderListEmpty}
         ListFooterComponent={this.renderListFooter}
         contentContainerStyle={

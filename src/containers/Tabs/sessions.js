@@ -47,6 +47,8 @@ const styles = StyleSheet.create({
   Sessionbg: {
     width: '100%',
     // resizeMode: '',
+    // flex: 1,
+    // backgroundColor: 'red',
   },
   childView: {
     marginHorizontal: 16,
@@ -69,22 +71,23 @@ const styles = StyleSheet.create({
   },
   childView2: {
     flexDirection: 'row',
+    justifyContent: 'space-between',
     paddingHorizontal: 16,
     backgroundColor: '#5c746a',
     borderTopRightRadius: 30,
     borderTopLeftRadius: 30,
   },
   dateView: {
-    flex: 1,
+    // flex: 1,
   },
   scheduleView: {
-    flex: 2,
-    color: 'white',
+    // flex: 2,
+    // color: 'white',
     justifyContent: 'center',
     alignItems: 'center',
   },
   timeView: {
-    flex: 1,
+    // flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
   },

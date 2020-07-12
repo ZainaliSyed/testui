@@ -24,11 +24,4 @@ export default {
   medium_image2: require('../assets/images/images/medium_image2.png'),
   small_image2: require('../assets/images/images/small_image2.png'),
   small_image3: require('../assets/images/images/small_image3.png'),
-
-  // image3: require('../assets/images/large_image/image3.png'),
-  // image4: require('../assets/images/medium_image/image4.png'),
-  // image5: require('../assets/images/medium_image/image5.png'),
-  // image6: require('../assets/images/medium_image/image6.png'),
-  // image7: require('../assets/images/small_image/image7.png'),
-  // image8: require('../assets/images/small_image/image8(1).png'),
 };

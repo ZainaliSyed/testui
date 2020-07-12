@@ -47,7 +47,11 @@ export default class Sessions extends Component {
   renderItem = ({item, index}) => {
     const {data} = this.state;
     return (
-      <View style={styles.childViewChild3}>
+      <View
+        style={[
+          styles.childViewChild3,
+          data.length - 1 == index ? {paddingBottom: 30} : {},
+        ]}>
         <View style={styles.excrsesMainChild}>
           <View style={styles.excrsesChild}>
             <Text style={styles.excrsesText}>{item}</Text>
@@ -107,7 +111,7 @@ export default class Sessions extends Component {
               // ItemSeparatorComponent={this.renderSeparator}
               // emptyImage={Images.emptyNotification}
               // isFetching={this.props.inAppNotificationsIsFetching}
-              showsHorizontalScrollIndicator={false}
+              // showsHorizontalScrollIndicator={false}
             />
           </View>
         </View>
@@ -131,22 +135,18 @@ const styles = StyleSheet.create({
   },
 
   instName: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(16),
+    ...AppStyles.hlRe(16, Colors.text.white),
     marginTop: 41,
     marginBottom: 10,
   },
 
   workOut: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(24),
-    fontWeight: 'bold',
+    ...AppStyles.hlBold(24, Colors.text.white),
     marginBottom: 10,
   },
 
   advns: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(16),
+    ...AppStyles.hlRe(16, Colors.text.white),
     marginBottom: 64,
   },
 
@@ -185,15 +185,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   dateText: {
-    color: 'white',
     marginTop: 10,
     marginBottom: 10,
-    fontWeight: 'bold',
-    fontSize: Metrics.generatedFontSize(18),
+    ...AppStyles.hlBold(18, Colors.text.white),
   },
   dateText2: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(14),
+    ...AppStyles.hlRe(14, Colors.text.white),
     textAlign: 'center',
   },
 
@@ -207,9 +204,7 @@ const styles = StyleSheet.create({
   },
 
   excrses: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(20),
-    fontWeight: 'bold',
+    ...AppStyles.hlBold(20, Colors.text.white),
     marginTop: 35,
     marginBottom: 10,
   },
@@ -235,9 +230,7 @@ const styles = StyleSheet.create({
   },
 
   excrsesText: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(18),
-    fontWeight: 'bold',
+    ...AppStyles.hlBold(18, Colors.text.white),
     marginTop: 15,
   },
 

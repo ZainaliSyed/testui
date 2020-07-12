@@ -48,7 +48,6 @@ export default class Sessions extends Component {
 
   renderItem = ({item, index}) => {
     const {data} = this.state;
-    console.log('item', item);
     return (
       <View style={styles.childViewChild3}>
         <View style={styles.excrsesMainChild}>

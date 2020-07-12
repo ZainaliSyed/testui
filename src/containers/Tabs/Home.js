@@ -183,8 +183,7 @@ const styles = StyleSheet.create({
   },
 
   welcmeText: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(20),
+    ...AppStyles.hlRe(20, Colors.text.white),
     marginBottom: 22,
   },
 

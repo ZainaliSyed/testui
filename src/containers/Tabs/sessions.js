@@ -47,7 +47,11 @@ export default class Sessions extends Component {
   renderItem = ({item, index}) => {
     const {data} = this.state;
     return (
-      <View style={styles.childViewChild3}>
+      <View
+        style={[
+          styles.childViewChild3,
+          data.length - 1 == index ? {paddingBottom: 20} : {},
+        ]}>
         <View style={styles.excrsesMainChild}>
           <View style={styles.excrsesChild}>
             <Text style={styles.excrsesText}>{item}</Text>
@@ -107,7 +111,7 @@ export default class Sessions extends Component {
               // ItemSeparatorComponent={this.renderSeparator}
               // emptyImage={Images.emptyNotification}
               // isFetching={this.props.inAppNotificationsIsFetching}
-              showsHorizontalScrollIndicator={false}
+              // showsHorizontalScrollIndicator={false}
             />
           </View>
         </View>

@@ -18,6 +18,10 @@ export default {
   icPlus: require('../assets/images/icPlus/icPlus.png'),
   icGym: require('../assets/images/tabs/icGym.png'),
   icSessions: require('../assets/images/tabs/icSessions.png'),
+  medium_image: require('../assets/images/images/medium_image.png'),
+  medium_image2: require('../assets/images/images/medium_image2.png'),
+  small_image2: require('../assets/images/images/small_image2.png'),
+  small_image3: require('../assets/images/images/small_image3.png'),
 
   // image3: require('../assets/images/large_image/image3.png'),
   // image4: require('../assets/images/medium_image/image4.png'),

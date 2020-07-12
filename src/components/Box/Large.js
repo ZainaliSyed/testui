@@ -12,7 +12,7 @@ const large = (props) => {
     <ButtonView style={styles.container}>
       <ImageBackground source={item.image} style={styles.bgStyle}>
         <View style={styles.advnsView}>
-          <Text style={styles.advnsViewText}>{item.advns}</Text>
+          <Text style={styles.advnsViewText}>{item.status}</Text>
         </View>
         <View style={styles.workOutView}>
           <Text style={styles.txtStyle}>{item.title}</Text>
@@ -28,17 +28,17 @@ const styles = StyleSheet.create({
     width: Metrics.widthRatio(265),
     height: Metrics.widthRatio(255),
     // paddingHorizontal: 15,
-    // marginHorizontal: 18,
+    // marginRight: 18,
+    marginLeft: 18,
   },
   bgStyle: {
     flex: 1,
     justifyContent: 'space-between',
-    paddingTop: 20,
+    paddingTop: 15,
     paddingBottom: 15,
   },
   workOutView: {
-    marginHorizontal: 23,
-    paddingHorizontal: 12,
+    marginHorizontal: 12,
   },
   txtStyle: {
     paddingTop: Metrics.heightRatio(15),
@@ -57,7 +57,7 @@ const styles = StyleSheet.create({
     borderRadius: 9,
     justifyContent: 'center',
     alignItems: 'center',
-    marginHorizontal: 23,
+    // marginLeft: 2.5,
   },
 
   advnsViewText: {

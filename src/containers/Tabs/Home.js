@@ -23,12 +23,12 @@ export default class Home extends Component {
       {
         title: 'Mark',
         title2: 'Foster',
-        image: Images.image1,
+        image: Images.small_image2,
       },
       {
         title: 'Serena',
         title2: 'Angel',
-        image: Images.image1,
+        image: Images.small_image3,
       },
       {
         title: 'Catherine',
@@ -38,12 +38,12 @@ export default class Home extends Component {
       {
         title: 'Mark',
         title2: 'Foster',
-        image: Images.image1,
+        image: Images.small_image2,
       },
       {
         title: 'Serena',
         title2: 'Angel',
-        image: Images.image1,
+        image: Images.small_image3,
       },
       {
         title: 'Catherine',
@@ -53,51 +53,51 @@ export default class Home extends Component {
       {
         title: 'Mark',
         title2: 'Foster',
-        image: Images.image1,
+        image: Images.small_image2,
       },
       {
         title: 'Serena',
         title2: 'Angel',
-        image: Images.image1,
+        image: Images.small_image3,
       },
     ],
 
     data2: [
       {
-        title: `Back and Abs`,
-        image: Images.image1,
+        title: 'Back and Abs',
+        image: Images.medium_image,
         people: '13 people this week',
-        advns: 'Advanced',
+        status: 'Advanced',
+      },
+      {
+        title: 'Biceps',
+        image: Images.medium_image2,
+        people: '28 people this week',
+        status: 'Beginner',
       },
       {
         title: 'Back and Abs',
-        image: Images.image1,
+        image: Images.medium_image,
         people: '13 people this week',
-        begnrs: 'Beginner',
+        status: 'Advanced',
+      },
+      {
+        title: 'Biceps',
+        image: Images.medium_image2,
+        people: '28 people this week',
+        status: 'Beginner',
       },
       {
         title: 'Back and Abs',
-        image: Images.image1,
+        image: Images.medium_image,
         people: '13 people this week',
-        advns: 'Advanced',
+        status: 'Advanced',
       },
       {
-        title: 'Back and Abs',
-        image: Images.image1,
-        people: '13 people this week',
-        begnrs: 'Beginner',
-      },
-      {
-        title: 'Back and Abs',
-        image: Images.image1,
-        people: '13 people this week',
-        advns: 'Advanced',
-      },
-      {
-        title: 'Back and Abs',
-        image: Images.image1,
-        people: '13 people this week',
-        begnrs: 'Beginner',
+        title: 'Biceps',
+        image: Images.medium_image2,
+        people: '28 people this week',
+        status: 'Beginner',
       },
     ],
   };

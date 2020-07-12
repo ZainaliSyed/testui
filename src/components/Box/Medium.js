@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
     // paddingTop: Metrics.heightRatio(15),
     ...AppStyles.hlRe(18, Colors.text.white),
     textAlign: 'center',
-    lineHeight: 10,
+    lineHeight: 15,
   },
 });
 

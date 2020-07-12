@@ -68,7 +68,15 @@ const SessionsStack = ({navigation}) => (
 export default TabNav = () => (
   <Tab.Navigator
     tabBarOptions={{
-      style: {backgroundColor: '#202332', borderTopWidth: 0},
+      style: {
+        backgroundColor: '#202332',
+        borderTopWidth: 0,
+        height: 56,
+        paddingTop: 10,
+      },
+      labelStyle: {
+        marginVertical: 5,
+      },
       showIcon: true,
       activeTintColor: '#1cb281',
       inactiveTintColor: '#FFFFFF69',

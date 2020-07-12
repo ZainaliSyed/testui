@@ -7,7 +7,7 @@
 //
 import {put, call, takeEvery, take} from 'redux-saga/effects';
 // import { success, failure, requestAction } from "../actions/ServiceAction";
-import HttpServiceManager from '../services/HttpServiceManager';
+// import HttpServiceManager from '../services/HttpServiceManager';
 import {
   GENERAL_ACTION,
   GENERAL_ACTION_MULTIPLE_REQUEST,

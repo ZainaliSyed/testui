@@ -8,7 +8,6 @@ import RootNavigator from './navigator';
 import {navigatorRef, push} from './services/NavigationService';
 
 import {Colors} from './theme';
-import HttpServiceManager from './services/HttpServiceManager';
 import constant from './constants';
 import FlashMessage, {showMessage} from 'react-native-flash-message';
 import Spinner from 'react-native-globalspinner';
@@ -20,11 +19,7 @@ export const LoginContext = createContext({
 });
 
 export default class App extends Component {
-  componentDidMount() {
-    HttpServiceManager.initialize(constant.baseURL, {
-      token: constant.applicationToken,
-    });
-  }
+  componentDidMount() {}
 
   state = {isReduxLoaded: false};
 

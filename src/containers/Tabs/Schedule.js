@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 
-export default class Details extends Component {
+export default class Schedule extends Component {
   state = {};
 
   componentDidMount() {}
@@ -11,7 +11,7 @@ export default class Details extends Component {
 
     return (
       <View style={styles.container}>
-        <Text style={styles.txtStyle}>Welcome To Clients</Text>
+        <Text style={styles.txtStyle}>Welcome To Schedule</Text>
       </View>
     );
   }

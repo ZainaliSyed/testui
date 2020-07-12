@@ -18,6 +18,8 @@ export default {
   icPlus: require('../assets/images/icPlus/icPlus.png'),
   icGym: require('../assets/images/tabs/icGym.png'),
   icSessions: require('../assets/images/tabs/icSessions.png'),
+  icClients: require('../assets/images/tabs/icClients.png'),
+  icSchedule: require('../assets/images/tabs/icSchedule.png'),
   medium_image: require('../assets/images/images/medium_image.png'),
   medium_image2: require('../assets/images/images/medium_image2.png'),
   small_image2: require('../assets/images/images/small_image2.png'),

@@ -5,6 +5,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from '../../containers/Tabs/Home';
 import Details from '../../containers/Tabs/Details';
 import Sessions from '../../containers/Tabs/sessions';
+import Schedule from '../../containers/Tabs/Schedule';
+
 import {Images, Metrics} from '../../theme';
 
 const Tab = createBottomTabNavigator();
@@ -15,33 +17,24 @@ const HomeStack = ({navigation}) => (
     screenOptions={{
       headerShown: false,
     }}>
-    <Stack.Screen
-      name="Home"
-      component={Home}
-      // options={{
-      //   headerLeft: () => (
-      //     <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-      //       <Image source={Images.icMenu} style={{marginHorizontal: 15}} />
-      //     </TouchableOpacity>
-      //   ),
-      // }}
-    />
+    <Stack.Screen name="Home" component={Home} />
   </Stack.Navigator>
 );
 
 const DetailsStack = ({navigation}) => (
-  <Stack.Navigator>
-    <Stack.Screen
-      name="Details"
-      component={Details}
-      // options={{
-      //   headerLeft: () => (
-      //     <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-      //       <Image source={Images.icMenu} style={{marginHorizontal: 15}} />
-      //     </TouchableOpacity>
-      //   ),
-      // }}
-    />
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}>
+    <Stack.Screen name="Details" component={Details} />
+  </Stack.Navigator>
+);
+const ScheduleStack = ({navigation}) => (
+  <Stack.Navigator
+    screenOptions={{
+      headerShown: false,
+    }}>
+    <Stack.Screen name="Schedule" component={Schedule} />
   </Stack.Navigator>
 );
 
@@ -50,18 +43,7 @@ const SessionsStack = ({navigation}) => (
     screenOptions={{
       headerShown: false,
     }}>
-    <Stack.Screen
-      name="Sessions"
-      component={Sessions}
-
-      // options={{
-      //   headerLeft: () => (
-      //     <TouchableOpacity onPress={() => navigation.toggleDrawer()}>
-      //       <Image source={Images.icMenu} style={{marginHorizontal: 15}} />
-      //     </TouchableOpacity>
-      //   ),
-      // }}
-    />
+    <Stack.Screen name="Sessions" component={Sessions} />
   </Stack.Navigator>
 );
 
@@ -79,7 +61,6 @@ export default TabNav = () => (
       },
       showIcon: true,
       activeTintColor: '#1cb281',
-      // inactiveTintColor: '#FFFFFF69',
     }}>
     <Tab.Screen
       name="HomeStack"
@@ -99,7 +80,10 @@ export default TabNav = () => (
       name="DetailsStack"
       component={DetailsStack}
       options={{
-        tabBarLabel: 'Details',
+        tabBarLabel: 'Clients',
+        tabBarIcon: ({color, size}) => (
+          <Image style={{tintColor: color}} source={Images.icClients} />
+        ),
       }}
     />
     <Tab.Screen
@@ -109,6 +93,16 @@ export default TabNav = () => (
         tabBarLabel: 'Sessions',
         tabBarIcon: ({color, size}) => (
           <Image style={{tintColor: color}} source={Images.icSessions} />
+        ),
+      }}
+    />
+    <Tab.Screen
+      name="ScheduleStack"
+      component={ScheduleStack}
+      options={{
+        tabBarLabel: 'Schedule',
+        tabBarIcon: ({color, size}) => (
+          <Image style={{tintColor: color}} source={Images.icSchedule} />
         ),
       }}
     />

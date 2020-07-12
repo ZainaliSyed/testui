@@ -5,11 +5,9 @@ import {
   StyleSheet,
   Image,
   ImageBackground,
-  ScrollView,
   SafeAreaView,
 } from 'react-native';
 import {Metrics, Colors, Images, AppStyles} from '../../theme';
-import {withSafeAreaInsets} from 'react-native-safe-area-context';
 import {Separator} from '../../components';
 import {FlatListHandler} from '../../reuseableComponents';
 
@@ -177,8 +175,6 @@ const styles = StyleSheet.create({
     marginTop: 20,
   },
 
-  dateView: {},
-
   scheduleView: {
     justifyContent: 'center',
     alignItems: 'center',
@@ -225,6 +221,7 @@ const styles = StyleSheet.create({
   excrsesMainChild: {
     flexDirection: 'row',
     paddingHorizontal: 16,
+    marginTop: 5,
     backgroundColor: '#202332',
   },
 

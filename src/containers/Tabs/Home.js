@@ -4,12 +4,11 @@ import {
   Text,
   StyleSheet,
   Image,
-  ImageBackground,
   FlatList,
   SafeAreaView,
 } from 'react-native';
 import {Metrics, Colors, Images, AppStyles} from '../../theme';
-import {FlatListHandler, ButtonView} from '../../reuseableComponents';
+import {FlatListHandler} from '../../reuseableComponents';
 import {Box, Header} from '../../components';
 import {ScrollView} from 'react-native-gesture-handler';
 export default class Home extends Component {
@@ -17,47 +16,38 @@ export default class Home extends Component {
     data: [
       {
         title: 'Catherine Williams',
-        title2: 'Williams',
         image: Images.image1,
       },
       {
         title: 'Mark Foster',
-        title2: 'Foster',
         image: Images.small_image2,
       },
       {
         title: 'Serena Angel',
-        title2: 'Angel',
         image: Images.small_image3,
       },
       {
-        title: 'Catherine',
-        title2: 'Williams',
+        title: 'Catherine Williams',
         image: Images.image1,
       },
       {
-        title: 'Mark',
-        title2: 'Foster',
+        title: 'Mark Foster',
         image: Images.small_image2,
       },
       {
-        title: 'Serena',
-        title2: 'Angel',
+        title: 'Serena Angel',
         image: Images.small_image3,
       },
       {
-        title: 'Catherine',
-        title2: 'Williams',
+        title: 'Catherine Williams',
         image: Images.image1,
       },
       {
-        title: 'Mark',
-        title2: 'Foster',
+        title: 'Mark Foster',
         image: Images.small_image2,
       },
       {
-        title: 'Serena',
-        title2: 'Angel',
+        title: 'Serena Angel',
         image: Images.small_image3,
       },
     ],
@@ -172,8 +162,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#202332',
-    // justifyContent: 'center',
-    // alignItems: 'center',
   },
 
   welcme: {
@@ -197,8 +185,8 @@ const styles = StyleSheet.create({
   },
 
   todayViewText: {
-    color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(18),
+    ...AppStyles.hlRe(18, Colors.text.white),
+    lineHeight: 22,
   },
 
   verticalLine: {
@@ -220,7 +208,6 @@ const styles = StyleSheet.create({
   },
 
   trainngSesionText: {
-    color: Colors.text.white,
     ...AppStyles.hlBold(24, Colors.text.white),
   },
 
@@ -231,7 +218,6 @@ const styles = StyleSheet.create({
   },
 
   latestClientText: {
-    color: Colors.text.white,
     ...AppStyles.hlBold(18, Colors.text.white),
     marginBottom: 15,
   },

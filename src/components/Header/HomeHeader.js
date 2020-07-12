@@ -29,7 +29,7 @@ export default HomeHeader = (props) => {
 
 const styles = StyleSheet.create({
   container: {
-    marginVertical: Metrics.doubleBaseMargin + Metrics.doubleBaseMargin,
+    marginVertical: Metrics.doubleBaseMargin,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingHorizontal: 18,

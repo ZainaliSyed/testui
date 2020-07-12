@@ -4,7 +4,6 @@ import {Metrics, Colors, Images, AppStyles} from '../../theme';
 // import StarRating from 'react-native-star-rating';
 import {StarRating} from '../../components';
 import {ButtonView} from '../../reuseableComponents';
-import {push} from '../../services/NavigationService';
 
 const large = (props) => {
   const {item} = props;
@@ -54,12 +53,10 @@ const styles = StyleSheet.create({
     borderRadius: 9,
     justifyContent: 'center',
     alignItems: 'center',
-    // marginLeft: 2.5,
   },
 
   advnsViewText: {
-    ...AppStyles.hlRe(14, Colors.text.white),
-    fontWeight: 'bold',
+    ...AppStyles.hlBold(14, Colors.text.white),
   },
 });
 

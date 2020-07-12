@@ -16,17 +16,17 @@ export default class Home extends Component {
   state = {
     data: [
       {
-        title: 'Catherine',
+        title: 'Catherine Williams',
         title2: 'Williams',
         image: Images.image1,
       },
       {
-        title: 'Mark',
+        title: 'Mark Foster',
         title2: 'Foster',
         image: Images.small_image2,
       },
       {
-        title: 'Serena',
+        title: 'Serena Angel',
         title2: 'Angel',
         image: Images.small_image3,
       },

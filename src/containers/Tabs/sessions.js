@@ -104,7 +104,7 @@ export default class Sessions extends Component {
             </View>
             <FlatListHandler
               data={this.state.data}
-              style={{marginBottom: Metrics.heightRatio(60)}}
+              // style={{marginBottom: Metrics.heightRatio(60)}}
               // fetchRequest={this.fetchScheduleList}
               renderItem={this.renderItem}
               // ItemSeparatorComponent={this.renderSeparator}

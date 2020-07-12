@@ -1,10 +1,3 @@
-//
-//  ActionTypes.js:
-//  BoilerPlate
-//
-//  Created by Retrocube on 10/4/2019, 9:06:43 AM.
-//  Copyright © 2019 Retrocube. All rights reserved.
-//
 const REQUEST = 'REQUEST';
 const SUCCESS = 'SUCCESS';
 const FAILURE = 'FAILURE';

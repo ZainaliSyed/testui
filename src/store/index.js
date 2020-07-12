@@ -1,10 +1,3 @@
-//
-//  index.js:
-//  BoilerPlate
-//
-//  Created by Retrocube on 10/4/2019, 9:39:19 AM.
-//  Copyright © 2019 Retrocube. All rights reserved.
-//
 import {createStore, applyMiddleware} from 'redux';
 import {persistStore, persistReducer} from 'redux-persist';
 import createSagaMiddleware from 'redux-saga';

@@ -1,28 +1,21 @@
-//
-//  navigatorHelper.js:
-//  BoilerPlate
-//
-//  Created by Retrocube on 10/4/2019, 9:20:00 AM.
-//  Copyright © 2019 Retrocube. All rights reserved.
-//
 import React from 'react';
-import { Images, Metrics, AppStyles, Colors, Fonts } from "../theme";
-import { Image, TouchableOpacity } from "react-native";
-import { ImageButton } from '../reuseableComponents';
+import {Images, Metrics, AppStyles, Colors, Fonts} from '../theme';
+import {Image, TouchableOpacity} from 'react-native';
+import {ImageButton} from '../reuseableComponents';
 
 const headerColor = {
   headerStyle: {
     backgroundColor: Colors.secondary.azure,
-    borderBottomWidth: 0
-  }
+    borderBottomWidth: 0,
+  },
 };
 const removeBorder = {
   headerStyle: {
-    borderBottomWidth: 0
-  }
+    borderBottomWidth: 0,
+  },
 };
 const headerTransparent = {
-  headerTransparent: true
+  headerTransparent: true,
 };
 const backImage = (tintColor = Colors.secondary.azure) => {
   return {
@@ -35,34 +28,34 @@ const backImage = (tintColor = Colors.secondary.azure) => {
           //tintColor: tintColor
         }}
       />
-    )
+    ),
   };
 };
-const title = title => ({
+const title = (title) => ({
   title,
   headerTitleStyle: {
     color: Colors.secondary.azure,
     ...Fonts.font(
       Fonts.FontFamily.default,
       Fonts.Type.SemiBold,
-      Fonts.Size.medium
-    )
-  }
+      Fonts.Size.medium,
+    ),
+  },
 });
-const defaultNavOptions = navOptions => {
+const defaultNavOptions = (navOptions) => {
   return {
-    defaultNavigationOptions: ({ navigation }) => navOptions
+    defaultNavigationOptions: ({navigation}) => navOptions,
   };
 };
-const navOptions = navOptions => {
+const navOptions = (navOptions) => {
   return {
-    navigationOptions: ({ navigation }) => navOptions
+    navigationOptions: ({navigation}) => navOptions,
   };
 };
 
 const navButton = (image, key = 'headerRight', navOptions, style) => {
   return {
-    navigationOptions: ({ navigation }) => {
+    navigationOptions: ({navigation}) => {
       return {
         [key]: () => (
           <ImageButton
@@ -71,7 +64,7 @@ const navButton = (image, key = 'headerRight', navOptions, style) => {
               justifyContent: 'center',
               marginHorizontal: Metrics.smallMargin,
               height: 40,
-              ...style
+              ...style,
             }}
             onPress={navigation.getParam('onPress', () =>
               global.log('onPress'),
@@ -85,13 +78,13 @@ const navButton = (image, key = 'headerRight', navOptions, style) => {
 };
 const dyanimcTitle = (navOptions = {}) => {
   return {
-    navigationOptions: ({ navigation }) => {
-      console.log("navigation-navButton", navigation);
+    navigationOptions: ({navigation}) => {
+      console.log('navigation-navButton', navigation);
       return {
-        title: navigation.getParam("title", ""),
-        ...navOptions
+        title: navigation.getParam('title', ''),
+        ...navOptions,
       };
-    }
+    },
   };
 };
 export {
@@ -103,5 +96,5 @@ export {
   defaultNavOptions,
   navOptions,
   navButton,
-  dyanimcTitle
+  dyanimcTitle,
 };

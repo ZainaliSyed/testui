@@ -1,10 +1,3 @@
-//
-//  AppStyles.js:
-//  BoilerPlate
-//
-//  Created by Retrocube on 10/4/2019, 9:47:42 AM.
-//  Copyright © 2019 Retrocube. All rights reserved.
-//
 import {StyleSheet} from 'react-native';
 import {Metrics, Fonts, Colors} from '.';
 

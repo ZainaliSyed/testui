@@ -1,10 +1,3 @@
-//
-//  serviceSaga.js:
-//  BoilerPlate
-//
-//  Created by Retrocube on 10/4/2019, 9:29:45 AM.
-//  Copyright © 2019 Retrocube. All rights reserved.
-//
 import {put, call, takeEvery, take} from 'redux-saga/effects';
 // import { success, failure, requestAction } from "../actions/ServiceAction";
 // import HttpServiceManager from '../services/HttpServiceManager';

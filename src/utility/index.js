@@ -1,10 +1,3 @@
-//
-//  index.js:
-//  BoilerPlate
-//
-//  Created by Retrocube on 10/4/2019, 9:49:50 AM.
-//  Copyright © 2019 Retrocube. All rights reserved.
-//
 import {Alert, Linking, Platform} from 'react-native';
 class utility {
   isPlatformAndroid = () => Platform.OS === 'android';

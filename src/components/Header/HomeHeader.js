@@ -4,7 +4,7 @@ import React from 'react';
 import {Text, StyleSheet, View, Image} from 'react-native';
 
 import {Colors, AppStyles, Images, Metrics} from '../../theme';
-import {ButtonView, AppButton} from '../../reuseableComponents';
+import {ButtonView} from '../../reuseableComponents';
 import {pop} from '../../services/NavigationService';
 export default HomeHeader = (props) => {
   return (

@@ -5,7 +5,7 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Home from '../../containers/Tabs/Home';
 import Details from '../../containers/Tabs/Details';
 import Sessions from '../../containers/Tabs/sessions';
-import {Images} from '../../theme';
+import {Images, Metrics} from '../../theme';
 
 const Tab = createBottomTabNavigator();
 const Stack = createStackNavigator();
@@ -71,7 +71,7 @@ export default TabNav = () => (
       style: {
         backgroundColor: '#202332',
         borderTopWidth: 0,
-        height: 56,
+        height: Metrics.screenHeight >= 812 ? 100 : 65,
         paddingTop: 10,
       },
       labelStyle: {
@@ -87,7 +87,11 @@ export default TabNav = () => (
       options={{
         tabBarLabel: 'Gym',
         tabBarIcon: ({color, size}) => (
-          <Image style={{tintColor: color}} source={Images.icGym} />
+          <Image
+            style={{tintColor: color}}
+            source={Images.icGym}
+            resizeMode="contain"
+          />
         ),
       }}
     />

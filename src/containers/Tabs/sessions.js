@@ -156,8 +156,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#5c746a',
     borderTopRightRadius: 30,
     borderTopLeftRadius: 30,
-
-    top: -100,
+    top: -120,
   },
 
   childViewChild: {

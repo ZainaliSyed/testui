@@ -167,7 +167,7 @@ const styles = StyleSheet.create({
   welcme: {
     flex: 1,
     marginHorizontal: 18,
-    marginTop: 39.26,
+    marginTop: 30,
   },
 
   welcmeText: {

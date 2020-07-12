@@ -68,13 +68,19 @@ const SessionsStack = ({navigation}) => (
 export default TabNav = () => (
   <Tab.Navigator
     tabBarOptions={{
-      style: {backgroundColor: '#202332'},
+      style: {backgroundColor: '#202332', borderTopWidth: 0},
+      showIcon: true,
+      activeTintColor: '#1cb281',
+      inactiveTintColor: '#FFFFFF69',
     }}>
     <Tab.Screen
       name="HomeStack"
       component={HomeStack}
       options={{
-        tabBarLabel: 'Home',
+        tabBarLabel: 'Gym',
+        tabBarIcon: ({color, size}) => (
+          <Image style={{tintColor: color}} source={Images.icGym} />
+        ),
       }}
     />
     <Tab.Screen
@@ -89,6 +95,9 @@ export default TabNav = () => (
       component={SessionsStack}
       options={{
         tabBarLabel: 'Sessions',
+        tabBarIcon: ({color, size}) => (
+          <Image style={{tintColor: color}} source={Images.icSessions} />
+        ),
       }}
     />
   </Tab.Navigator>

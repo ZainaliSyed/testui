@@ -16,6 +16,8 @@ export default {
   selectionTick: require('../assets/images/images/selectionTick.png'),
   icSearch: require('../assets/images/icSearch/icSearch.png'),
   icPlus: require('../assets/images/icPlus/icPlus.png'),
+  icGym: require('../assets/images/tabs/icGym.png'),
+  icSessions: require('../assets/images/tabs/icSessions.png'),
 
   // image3: require('../assets/images/large_image/image3.png'),
   // image4: require('../assets/images/medium_image/image4.png'),

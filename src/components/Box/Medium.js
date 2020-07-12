@@ -22,12 +22,13 @@ const styles = StyleSheet.create({
   container: {
     width: Metrics.widthRatio(127),
     height: Metrics.widthRatio(128),
-    // paddingHorizontal: 18,
+    paddingHorizontal: 7,
   },
   bgStyle: {
     justifyContent: 'center',
     alignItems: 'center',
-    flex: 1,
+    width: Metrics.widthRatio(127),
+    height: Metrics.widthRatio(128),
   },
   txtStyle: {
     paddingTop: Metrics.heightRatio(15),

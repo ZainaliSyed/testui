@@ -27,12 +27,11 @@ const styles = StyleSheet.create({
   container: {
     width: Metrics.widthRatio(265),
     height: Metrics.widthRatio(255),
-    // paddingHorizontal: 15,
-    // marginRight: 18,
     marginLeft: 18,
   },
   bgStyle: {
-    flex: 1,
+    width: Metrics.widthRatio(265),
+    height: Metrics.widthRatio(255),
     justifyContent: 'space-between',
     paddingTop: 15,
     paddingBottom: 15,
@@ -42,13 +41,11 @@ const styles = StyleSheet.create({
   },
   txtStyle: {
     paddingTop: Metrics.heightRatio(15),
-    ...AppStyles.hlRe(19, Colors.text.white),
-    fontWeight: 'bold',
-    // textAlign: 'center',
+    ...AppStyles.hlBold(16, Colors.text.white),
   },
   txtStyle1: {
     paddingTop: Metrics.heightRatio(15),
-    ...AppStyles.hlRe(19, Colors.text.white),
+    ...AppStyles.hlRe(14, Colors.text.white),
   },
   advnsView: {
     backgroundColor: '#1CB281',

@@ -71,7 +71,7 @@ export default class Home extends Component {
       },
       {
         title: 'Biceps',
-        image: Images.medium_image2,
+        image: Images.medium_image,
         people: '28 people this week',
         status: 'Beginner',
       },
@@ -83,7 +83,7 @@ export default class Home extends Component {
       },
       {
         title: 'Biceps',
-        image: Images.medium_image2,
+        image: Images.medium_image,
         people: '28 people this week',
         status: 'Beginner',
       },
@@ -95,7 +95,7 @@ export default class Home extends Component {
       },
       {
         title: 'Biceps',
-        image: Images.medium_image2,
+        image: Images.medium_image,
         people: '28 people this week',
         status: 'Beginner',
       },
@@ -161,7 +161,7 @@ export default class Home extends Component {
           data={data}
           showsHorizontalScrollIndicator={false}
           renderItem={this._renderItems}
-          style={{}}
+          style={{marginBottom: 10}}
         />
       </ScrollView>
     );
@@ -185,7 +185,7 @@ const styles = StyleSheet.create({
   welcmeText: {
     color: Colors.text.white,
     fontSize: Metrics.generatedFontSize(20),
-    marginBottom: 15,
+    marginBottom: 22,
   },
 
   welcmeChildView: {
@@ -200,7 +200,6 @@ const styles = StyleSheet.create({
   todayViewText: {
     color: Colors.text.white,
     fontSize: Metrics.generatedFontSize(18),
-    borderLeftWidth: 1,
   },
 
   verticalLine: {
@@ -217,26 +216,24 @@ const styles = StyleSheet.create({
   trainngSesion: {
     flex: 1,
     marginHorizontal: 18,
-    marginTop: 45,
+    marginTop: 64,
+    marginBottom: 28,
   },
 
   trainngSesionText: {
     color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(24),
-    fontWeight: 'bold',
-    marginBottom: 15,
+    ...AppStyles.hlBold(24, Colors.text.white),
   },
 
   latestClient: {
     flex: 1,
     marginHorizontal: 18,
-    marginTop: 25,
+    marginTop: 61,
   },
 
   latestClientText: {
     color: Colors.text.white,
-    fontSize: Metrics.generatedFontSize(18),
-    fontWeight: 'bold',
+    ...AppStyles.hlBold(18, Colors.text.white),
     marginBottom: 15,
   },
 });

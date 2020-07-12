@@ -71,7 +71,7 @@ export default TabNav = () => (
       style: {backgroundColor: '#202332', borderTopWidth: 0},
       showIcon: true,
       activeTintColor: '#1cb281',
-      inactiveTintColor: '#FFFFFF69',
+      // inactiveTintColor: '#FFFFFF69',
     }}>
     <Tab.Screen
       name="HomeStack"
